@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Sort Algs</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Sort Algs</h1>
+        </div>
+        <div class="options">
+            <h1 id="newButton">New</h1>
+            <h1 id="speedButton">Speed</h1>
+            <ul class="speedList">
+                <li><h1 id="speedListLow">Low</h1></li>
+                <li><h1 id="speedListMedium">Medium</h1></li>
+                <li><h1 id="speedListHigh">High</h1></li>
+                <li><h1 id="speedListOriginal">Original</h1></li>
+            </ul>
+            <h1 id="algButton">Algorithm</h1>
+            <ul class="algList">
+                <li><h1 id="algListSelectionSort">Selection Sort</h1></li>
+                <li><h1 id="algListInsertionSort">Insertion Sort</h1></li>
+                <li><h1 id="algListBubbleSort">Bubble Sort</h1></li>
+                <li><h1 id="algListShakerSort">Shaker Sort</h1></li>
+                <li><h1 id="algListMergesort">Mergesort</h1></li>
+                <li><h1 id="algListQuicksort">Quicksort</h1></li>
+            </ul>
+            <h1 id="sortButton">Sort</h1>
+        </div>
+    
+    </header>
+    
+    <!-- Main -->
+    <div class="main">
+        <div id="tableWrapper1">
+            <div id="tableWrapper2">
+                <table id="tableSet"></table>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="leftSideContainer">
+                <p id="algSelected">Alg: </p>
+                <p id="speedSelected">Speed: </p>
+            </div>
+            
+            <div id="rightSideContainer">
+                <p id="funFact">Fun Fact: </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Scripts -->
+    <script src="./scripts/grid.js"></script>
+
+    <script src="./scripts/buttons/newButton.js"></script>
+    <script src="./scripts/buttons/speedButton.js"></script>
+    <script src="./scripts/buttons/speedButtonToggle.js"></script>
+    <script src="./scripts/buttons/algButton.js"></script>
+    <script src="./scripts/buttons/algButtonToggle.js"></script>
+    <script type="module" src="./scripts/buttons/sortButton.js"></script>
+
+    <script type="module" src="./scripts/algorithms/selectionSort.js"></script>
+    <script type="module" src="./scripts/algorithms/insertionSort.js"></script>
+    <script type="module" src="./scripts/algorithms/bubbleSort.js"></script>
+    <script type="module" src="./scripts/algorithms/shakerSort.js"></script>
+    <script type="module" src="./scripts/algorithms/mergeSort.js"></script>
+    <script type="module" src="./scripts/algorithms/quickSort.js"></script>
+
+</body>
+</html>
